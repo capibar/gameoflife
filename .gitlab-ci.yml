@@ -24,13 +24,13 @@ build:
 test:
   stage: test
   script:
-    - mvn clean verify
+    - mvn -e clean verify
     # - mvn test
     # - echo "test"
 
 run:
   stage: run
   script:
-    - mvn jetty:run
+    - mvn -e jetty:run
     # - mvn package
     #- mvn $MAVEN_CLI_OPTS exec:java -Dexec.mainClass="com.example.app.App"
