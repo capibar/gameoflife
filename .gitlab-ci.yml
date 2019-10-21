@@ -17,9 +17,11 @@ cache:
 
 build:
   stage: build
+  before_script:
+    - docker info
   script:
     #- mvn $MAVEN_CLI_OPTS compile
-    - mvn -e install
+    - mvn -e compile
 
 test:
   stage: test
