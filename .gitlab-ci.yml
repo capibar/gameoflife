@@ -17,15 +17,16 @@ cache:
 build:
   stage: build
   script:
-    - mvn $MAVEN_CLI_OPTS compile
+    #- mvn $MAVEN_CLI_OPTS compile
+    - mvn compile
 
 test:
   stage: test
   script:
-    - mvn $MAVEN_CLI_OPTS test
+    - mvn test
 
 run:
   stage: run
   script:
-    - mvn $MAVEN_CLI_OPTS package
+    - mvn package
     #- mvn $MAVEN_CLI_OPTS exec:java -Dexec.mainClass="com.example.app.App"
