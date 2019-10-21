@@ -1,3 +1,4 @@
+# DevOps3 Lab1
 image: maven:latest
 
 stages:
