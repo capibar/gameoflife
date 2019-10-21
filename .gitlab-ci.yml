@@ -20,6 +20,7 @@ build:
   script:
     #- mvn $MAVEN_CLI_OPTS compile
     - mvn -e compile
+    - mvn -e install
 
 test:
   stage: test
