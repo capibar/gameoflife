@@ -19,8 +19,10 @@ build:
   stage: build
   script:
     #- mvn $MAVEN_CLI_OPTS compile
+    - mnv -version
+    - java -version
     - mvn -e compile
-    - mvn -e install
+    
 
 test:
   stage: test
@@ -32,7 +34,11 @@ test:
 run:
   stage: run
   script:
-    - cd ./gameoflife-web/
+    - cd ./gamoflife-build
+    - mvn -e install
+    - cd ../gamoflife-core
+    - mvn -e install
+    - cd ../gameoflife-web/
     - pwd
     - mvn -e jetty:run
     # - mvn package
