@@ -34,11 +34,11 @@ test:
 run:
   stage: run
   script:
-    - cd ./gamoflife-build
+    #- cd ./gameoflife-build
     - mvn -e install
-    - cd ../gamoflife-core
+    #- cd ../gameoflife-core
     - mvn -e install
-    - cd ../gameoflife-web/
+    - cd ./gameoflife-web/
     - pwd
     - mvn -e jetty:run
     # - mvn package
