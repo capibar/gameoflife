@@ -19,7 +19,7 @@ build:
   stage: build
   script:
     #- mvn $MAVEN_CLI_OPTS compile
-    - mnv -version
+    - mvn -version
     - java -version
     - mvn -e compile
     
