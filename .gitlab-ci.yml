@@ -1,5 +1,5 @@
 # DevOps3 Lab1
-image: maven:latest
+image: maven:3.6.2-jdk-8
 
 stages:
   - build
