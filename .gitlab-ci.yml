@@ -44,7 +44,10 @@ run:
     - pwd
     #- mvn -e jetty:run
     - mvn package
+    - mvn install
+    - ls /builds/root/gol/gameoflife-web/target/
     - mvn tomcat7:deploy
+    
     #- cd ./gameoflife-web/
     #- pwd
     #- mvn clean install
