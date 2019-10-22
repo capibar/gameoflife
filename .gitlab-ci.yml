@@ -22,8 +22,8 @@ build:
     - mvn -version
     - java -version
     - pwd
-    #- mvn install
     - mvn compile
+    - mvn clean install
 
 test:
   stage: test
