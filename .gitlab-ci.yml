@@ -21,7 +21,8 @@ build:
     #- mvn $MAVEN_CLI_OPTS compile
     - mvn -version
     - java -version
-    - mvn -e compile
+    - pwd
+    - mvn install
     
 
 test:
