@@ -19,7 +19,7 @@ build:
   stage: build
   script:
     #- mvn $MAVEN_CLI_OPTS compile
-    - docker info
+    #- docker info
     - mvn -version
     - java -version
     - pwd
@@ -44,4 +44,7 @@ run:
     - pwd
     #- mvn -e jetty:run
     - mvn package
+    - cd ./gameoflife-web/
+    - pwd
+    - mvn -e jetty:run
     #- mvn $MAVEN_CLI_OPTS exec:java -Dexec.mainClass="com.example.app.App"
