@@ -42,8 +42,9 @@
                         <artifactId>tomcat7-maven-plugin</artifactId>
                         <version>2.2</version>
                         <configuration>
-                          <path>mygol777</path>
                           <url>http://3.18.111.167:8080/manager/text</url>
+                          <server>TomcatServer</server>
+                          <path>/mygol777</path>
                           <username>deployer</username>
                           <password>deployer</password>
                           <update>true</update>
@@ -276,8 +277,9 @@
                         <artifactId>tomcat7-maven-plugin</artifactId>
                         <version>2.2</version>
                         <configuration>
-                          <path>mygol777</path>
                           <url>http://3.18.111.167:8080/manager/text</url>
+                          <server>TomcatServer</server>
+                          <path>/mygol777</path>
                           <username>deployer</username>
                           <password>deployer</password>
                           <update>true</update>
