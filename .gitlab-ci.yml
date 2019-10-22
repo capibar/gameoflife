@@ -10,10 +10,10 @@ variables:
   MAVEN_CLI_OPTS: "-s .m2/settings.xml --batch-mode"
   MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
 
-cache:
-  paths:
-    - .m2/repository/
-    - target/
+#cache:
+#  paths:
+#    - .m2/repository/
+#    - target/
 
 build:
   stage: build
@@ -22,8 +22,8 @@ build:
     - mvn -version
     - java -version
     - pwd
-    - mvn install
-    
+    #- mvn install
+    - mvn compile
 
 test:
   stage: test
@@ -39,8 +39,8 @@ run:
     #- mvn -e install
     #- cd ../gameoflife-core
     #- mvn install
-    - cd ./gameoflife-web/
+    #- cd ./gameoflife-web/
     - pwd
-    - mvn -e jetty:run
-    # - mvn package
+    #- mvn -e jetty:run
+    - mvn package
     #- mvn $MAVEN_CLI_OPTS exec:java -Dexec.mainClass="com.example.app.App"
