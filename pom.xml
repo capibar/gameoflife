@@ -36,6 +36,20 @@
                     <target>1.7</target>
                 </configuration>
             </plugin>
+            
+            <plugin>
+                        <groupId>org.apache.tomcat.maven</groupId>
+                        <artifactId>tomcat7-maven-plugin</artifactId>
+                        <version>2.2</version>
+                        <configuration>
+                          <path>mygol</path>
+                          <url>http://3.18.111.167:8080/manager</url>
+                          <username>deploy</username>
+                          <password>deploy</password>
+                          <update>true</update>
+                     </configuration>
+            </plugin>
+            
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.11</version>
