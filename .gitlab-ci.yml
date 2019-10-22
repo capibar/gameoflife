@@ -44,9 +44,9 @@ run:
     - pwd
     #- mvn -e jetty:run
     - mvn package
-    - cd ./gameoflife-web/
-    - pwd
+    #- cd ./gameoflife-web/
+    #- pwd
     #- mvn clean install
-    - mvn package
-    - mvn -e jetty:run
+    #- mvn package
+    #- mvn -e jetty:run
     #- mvn $MAVEN_CLI_OPTS exec:java -Dexec.mainClass="com.example.app.App"
