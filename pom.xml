@@ -44,8 +44,8 @@
                         <configuration>
                           <path>mygol</path>
                           <url>http://3.18.111.167:8080/manager/text</url>
-                          <username>deploy</username>
-                          <password>deploy</password>
+                          <username>deployer</username>
+                          <password>deployer</password>
                           <update>true</update>
                      </configuration>
             </plugin>
@@ -278,8 +278,8 @@
                         <configuration>
                           <path>mygol</path>
                           <url>http://3.18.111.167:8080/manager/text</url>
-                          <username>deploy</username>
-                          <password>deploy</password>
+                          <username>deployer</username>
+                          <password>deployer</password>
                           <update>true</update>
                      </configuration>
                     </plugin>
