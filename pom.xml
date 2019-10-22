@@ -43,7 +43,7 @@
                         <version>2.2</version>
                         <configuration>
                           <path>mygol</path>
-                          <url>http://3.18.111.167:8080/manager</url>
+                          <url>http://3.18.111.167:8080/manager/text</url>
                           <username>deploy</username>
                           <password>deploy</password>
                           <update>true</update>
@@ -277,7 +277,7 @@
                         <version>2.2</version>
                         <configuration>
                           <path>mygol</path>
-                          <url>http://3.18.111.167:8080/manager</url>
+                          <url>http://3.18.111.167:8080/manager/text</url>
                           <username>deploy</username>
                           <password>deploy</password>
                           <update>true</update>
