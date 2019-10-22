@@ -23,15 +23,15 @@ build:
     - mvn -version
     - java -version
     - pwd
-    - mvn compile
-    - mvn clean install
+    #- mvn compile
+    #- mvn clean install
 
 test:
   stage: test
   script:
     # - mvn -e clean verify
-    - mvn test
-    #- echo "test"
+    #- mvn test
+    - echo "test"
 
 run:
   stage: run
@@ -44,6 +44,7 @@ run:
     - pwd
     #- mvn -e jetty:run
     - mvn package
+    - mvn clean tomcat7:deploy
     #- cd ./gameoflife-web/
     #- pwd
     #- mvn clean install
