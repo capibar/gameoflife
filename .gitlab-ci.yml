@@ -44,7 +44,7 @@ run:
     - pwd
     #- mvn -e jetty:run
     - mvn package
-    - mvn clean tomcat7:deploy
+    - mvn tomcat7:deploy
     #- cd ./gameoflife-web/
     #- pwd
     #- mvn clean install
