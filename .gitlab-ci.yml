@@ -35,9 +35,9 @@ run:
   stage: run
   script:
     #- cd ./gameoflife-build
-    - mvn -e install
+    #- mvn -e install
     #- cd ../gameoflife-core
-    - mvn -e install
+    #- mvn install
     - cd ./gameoflife-web/
     - pwd
     - mvn -e jetty:run
