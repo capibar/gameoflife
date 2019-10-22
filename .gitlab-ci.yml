@@ -46,7 +46,7 @@ run:
     - mvn package
     - mvn install
     - ls /builds/root/gol/gameoflife-web/target/
-    - mvn tomcat7:deploy
+    - mvn -e tomcat7:deploy
     
     #- cd ./gameoflife-web/
     #- pwd
