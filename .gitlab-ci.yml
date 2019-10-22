@@ -51,7 +51,9 @@ run:
     #- mvn -e jetty:run
     #- mvn $MAVEN_CLI_OPTS exec:java -Dexec.mainClass="com.example.app.App"
   artifacts:
-    - paths: /builds/root/gol/gameoflife-web/target/gameoflife.war
+    paths: 
+    - /builds/root/gol/gameoflife-web/target/gameoflife.war
+    expire_in: 1 week
   
   
     
