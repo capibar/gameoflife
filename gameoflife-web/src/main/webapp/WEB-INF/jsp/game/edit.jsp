@@ -95,7 +95,7 @@
         <table id="grid">
             <c:forEach begin="0" var="row" end="${rows - 1}">
                 <tr>
-                    <c:forEach begin="0" var="column" end="${column - 1}">
+                    <c:forEach begin="0" var="column" end="${columns - 1}">
                         <td><input name="cell_${row}_${column}" type="checkbox"/></td>
                     </c:forEach>
                 </tr>
