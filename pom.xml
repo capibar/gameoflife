@@ -42,11 +42,11 @@
                         <artifactId>tomcat7-maven-plugin</artifactId>
                         <version>2.2</version>
                         <configuration>
-                          <url>http://3.15.27.183:8080/manager/text</url>
+                          <url>http://35.223.146.222/manager/text</url>
                           <server>TomcatServer</server>
                           <path>/gameoflife6x6</path>
-                          <username>deployer</username>
-                          <password>deployer</password>
+                          <username>tomcatdeploy</username>
+                          <password>tomcatdeploys3cret</password>
                           <update>true</update>
                      </configuration>
             </plugin>
@@ -277,11 +277,11 @@
                         <artifactId>tomcat7-maven-plugin</artifactId>
                         <version>2.2</version>
                         <configuration>
-                          <url>http://3.18.111.167:8080/manager/text</url>
+                          <url>http://35.223.146.222/manager/text</url>
                           <server>TomcatServer</server>
-                          <path>/mygol777</path>
-                          <username>deployer</username>
-                          <password>deployer</password>
+                          <path>/gameoflife6x6</path>
+                          <username>tomcatdeploy</username>
+                          <password>tomcatdeploys3cret</password>
                           <update>true</update>
                      </configuration>
                     </plugin>
